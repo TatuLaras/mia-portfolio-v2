@@ -1,0 +1,21 @@
+.table .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0;
+    border-bottom: 1px solid white;
+    font-weight: 700;
+}
+
+.table .row:first-child {
+    padding-top: 0;
+}
+
+.table .row:last-child {
+    border: none;
+}
+
+.table .row span:last-child {
+    text-align: right;
+}

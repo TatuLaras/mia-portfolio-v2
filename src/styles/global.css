@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('/fonts/VictorMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Victor Mono Italic';
+    src: url('/fonts/VictorMono-Italic-VariableFont_wght.ttf');
+}
+
+:root {
+    --color-darkblue: #00121a;
+    --color-pastelblue: #65ab9e;
+    --color-blue: #0b2f41;
+    --color-white: #ddf9ff;
+    font-family: 'Victor Mono';
+
+    color: var(--color-white);
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-darkblue);
+}
+
+a {
+    color: white;
+}
+
+i {
+    font-style: normal;
+    font-family: 'Victor Mono Italic', monospace;
+    font-weight: 500;
+}
+
+section > h1 {
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3rem;
+}
+
+section {
+    padding-top: 2.4em;
+    padding-bottom: 6em;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-pastelblue);
+    border-radius: 3px;
+}

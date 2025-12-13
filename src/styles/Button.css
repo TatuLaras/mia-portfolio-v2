@@ -1,0 +1,24 @@
+button,
+.button {
+    background-color: transparent;
+    color: var(--color-white);
+    font-size: 0.8rem;
+    text-decoration: none;
+    border: 2px solid var(--color-white);
+    padding: 1.4em 2.6em;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+}
+
+button.pad-extra,
+.button.pad-extra {
+    padding: 2em 4.2em;
+}
+
+@media screen and (max-width: 400px) {
+    button.pad-extra,
+    .button.pad-extra {
+        padding: 1.4em 2.6em;
+    }
+}

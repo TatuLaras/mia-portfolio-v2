@@ -1,0 +1,48 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 clamp(1em, 10vw, 6em);
+    padding-top: 30vh;
+    padding-bottom: 40vh;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: 'Victor Mono Italic', monospace;
+    font-size: clamp(2rem, 14vw, 5rem);
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+header p {
+    margin-top: 2em;
+    max-width: 28em;
+    font-weight: 700;
+}
+
+header .bg {
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    transition: transform 0.4s ease-out;
+}
+
+.bg.zoom {
+    transform: scale(1.1);
+}
+
+header .gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(transparent, var(--color-darkblue));
+}

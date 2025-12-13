@@ -1,0 +1,13 @@
+.divider {
+    --radius: 1.4em;
+
+    background-color: var(--color-darkblue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: var(--radius);
+    border-radius: 0 0 var(--radius) var(--radius);
+    width: 100%;
+}
