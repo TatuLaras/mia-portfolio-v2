@@ -1,6 +1,4 @@
 #app {
-    --padding-horizontal: clamp(1em, 10vw, 6em);
-    --max-width: 80em;
     box-sizing: border-box;
     width: 100%;
 }

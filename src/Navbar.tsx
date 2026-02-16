@@ -31,23 +31,23 @@ export default function Navbar({ onLinkClicked = () => {} }: Props) {
         <nav ref={navRef}>
             <ul className="regular-menu">
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="/#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="/#about">About</a>
                 </li>
                 <li className="name">
-                    <a href="#about">Mia Mäntylampi</a>
+                    <a href="/#">Mia Mäntylampi</a>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <a href="/#resume">Resume</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="/#contact">Contact</a>
                 </li>
             </ul>
             <div className="hamburger-menu">
-                <a href="#about" className="name">
+                <a href="/#" className="name">
                     Mia Mäntylampi
                 </a>
                 <div
@@ -60,16 +60,16 @@ export default function Navbar({ onLinkClicked = () => {} }: Props) {
                 </div>
                 <ul className={showHamburger ? 'show' : ''}>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="/#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a href="/#about">About</a>
                     </li>
                     <li>
-                        <a href="#cv">CV</a>
+                        <a href="/#resume">Resume</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="/#contact">Contact</a>
                     </li>
                 </ul>
             </div>

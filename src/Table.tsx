@@ -12,8 +12,8 @@ interface Props {
 export default function Table({ items }: Props) {
     return (
         <div className="table">
-            {items.map((item) => (
-                <div className="row">
+            {items.map((item, i) => (
+                <div className="row" key={i}>
                     <span>{item.left}</span>
                     <span>{item.right}</span>
                 </div>

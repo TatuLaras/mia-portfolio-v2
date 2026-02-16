@@ -20,7 +20,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <header>
+        <header id="hero">
             <h1>Mia Mäntylampi</h1>
             <p>
                 I’m a graphic and visual designer who specializes in creating

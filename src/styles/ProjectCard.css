@@ -1,47 +1,33 @@
 .project-card {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     opacity: 0.1;
     transition:
-        opacity 0.2s ease-out,
-        transform 0.2s ease-out;
+        opacity 0.2s ease-in,
+        transform 0.2s ease-in;
     transform: translateX(-0.5em);
 }
-.project-card.in-view {
-    opacity: 1;
-    transform: none;
-}
 
-.project-card .image-container {
+.project-card .project-image {
     flex: 1;
-    position: relative;
-    overflow: hidden;
 }
 
-.project-card.mikro-gourmet .image {
+.project-card.mikro-gourmet .project-image > * {
     top: 2em;
     left: 2em;
     right: 2em;
     bottom: 2em;
 }
 
-.project-card .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition:
-        transform 0.2s ease-out,
-        filter 0.2s ease-out;
-    background-image: var(--img);
-    background-position: center;
-    background-repeat: no-repeat;
+.project-card:hover .project-image > * {
+    transform: scale(1.03);
 }
 
-.project-card:hover .image {
-    transform: scale(1.03);
+.project-card.in-view {
+    opacity: 1;
+    transform: none;
 }
 
 .project-card .info {
@@ -49,6 +35,7 @@
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
+    gap: 1em;
 }
 
 .project-card .info .title {

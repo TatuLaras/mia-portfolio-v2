@@ -5,7 +5,31 @@ export default function AboutDetails() {
     return (
         <div id="about-details">
             <h3>What I do</h3>
-            <p>stuff</p>
+            <div className="skills">
+                <div className="top-left">
+                    <h4>Graphic Design</h4>
+                    <ul>
+                        <li>Branding & Visual Identity</li>
+                        <li>Print & Editorial Design</li>
+                        <li>Product Design</li>
+                        <li>Illustration</li>
+                    </ul>
+                </div>
+                <div className="top-right">
+                    <h4>Visual Design</h4>
+                    <ul>
+                        <li>Web Design</li>
+                        <li>UX & UI Design</li>
+                    </ul>
+                </div>
+                <div className="bottom">
+                    <h4>Software</h4>
+                    <p>
+                        Adobe Illustrator, Adobe InDesign, Adobe Photoshop,
+                        Adobe After Effects, Figma, Canva
+                    </p>
+                </div>
+            </div>
             <h3>Experiences</h3>
             <Table
                 items={[

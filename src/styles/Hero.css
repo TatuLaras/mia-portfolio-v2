@@ -1,4 +1,4 @@
-header {
+#hero {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -8,20 +8,20 @@ header {
     overflow: hidden;
 }
 
-header h1 {
+#hero h1 {
     font-family: 'Victor Mono Italic', monospace;
     font-size: clamp(2rem, 14vw, 5rem);
     font-weight: 100;
     margin-bottom: 0;
 }
 
-header p {
+#hero p {
     margin-top: 2em;
     max-width: 28em;
     font-weight: 700;
 }
 
-header .bg {
+#hero .bg {
     background-image: url('/images/bg.jpg');
     background-size: cover;
     position: absolute;
@@ -37,7 +37,7 @@ header .bg {
     transform: scale(1.1);
 }
 
-header .gradient {
+#hero .gradient {
     position: absolute;
     left: 0;
     right: 0;

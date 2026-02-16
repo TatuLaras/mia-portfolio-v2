@@ -1,26 +1,21 @@
-import About from './About';
-import AboutDetails from './AboutDetails';
-import Contact from './Contact';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import Projects from './Projects';
 import './styles/App.css';
+import FrontPage from './FrontPage';
+import ProjectPage from './ProjectPage';
+import { getProject } from './project_data';
 
 function App() {
-    return (
-        <>
-            <Navbar />
-            <Hero />
-            <div id="app">
-                <Projects />
-                <About />
-                <AboutDetails />
-                <Contact />
-            </div>
-        </>
-    );
+    const path = window.location.pathname;
+
+    if (path == '/') return <FrontPage />;
+
+    const projectRoute = '/project/';
+    if (path.startsWith(projectRoute)) {
+        const projectId = parseInt(path.slice(projectRoute.length));
+        const project = getProject(projectId);
+        if (project) return <ProjectPage project={project} />;
+    }
+
+    return <h1>404 - Not found</h1>;
 }
-// <About />
-// <Contact />
 
 export default App;

@@ -13,6 +13,10 @@
     --color-pastelblue: #65ab9e;
     --color-blue: #0b2f41;
     --color-white: #ddf9ff;
+
+    --padding-horizontal: clamp(1em, 10vw, 6em);
+    --max-width: 80em;
+
     font-family: 'Victor Mono';
 
     color: var(--color-white);

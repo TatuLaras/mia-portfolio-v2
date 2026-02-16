@@ -1,24 +1,14 @@
+import type { Project } from './project_data';
+import ProjectImage from './ProjectImage';
 import './styles/ProjectCard.css';
 import { useEffect, useRef, type CSSProperties } from 'react';
 
 interface Props {
-    title: string;
-    category: string;
-    image: string;
-    imageBgColor?: string;
-    className?: string;
-    contain?: boolean;
+    project: Project;
 }
 
-export default function ProjectCard({
-    title,
-    category,
-    image,
-    imageBgColor = 'black',
-    className = '',
-    contain,
-}: Props) {
-    const ref = useRef<HTMLDivElement | null>(null);
+export default function ProjectCard({ project }: Props) {
+    const ref = useRef<HTMLAnchorElement | null>(null);
 
     useEffect(() => {
         window.addEventListener('scroll', checkIfCardInView);
@@ -48,27 +38,17 @@ export default function ProjectCard({
     };
 
     return (
-        <div className={`project-card ${className}`} ref={ref}>
-            <div
-                className="image-container"
-                style={{
-                    backgroundColor: imageBgColor,
-                }}
-            >
-                <div
-                    className="image"
-                    style={
-                        {
-                            backgroundImage: `url('${image}')`,
-                            backgroundSize: contain ? 'contain' : 'cover',
-                        } as CSSProperties
-                    }
-                ></div>
-            </div>
+        <a
+            className={`project-card ${project.cardClassName}`}
+            ref={ref}
+            draggable={false}
+            href={`/project/${project.id}`}
+        >
+            <ProjectImage project={project} />
             <div className="info">
-                <span className="title">{title}</span>
-                <span className="category">{category}</span>
+                <span className="title">{project.title}</span>
+                <span className="category">{project.category}</span>
             </div>
-        </div>
+        </a>
     );
 }

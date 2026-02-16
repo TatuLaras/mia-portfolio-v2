@@ -1,0 +1,13 @@
+.figure {
+    padding: 8em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.figure img {
+    max-width: 24em;
+    padding: 0 var(--img-padding);
+    box-sizing: border-box;
+}

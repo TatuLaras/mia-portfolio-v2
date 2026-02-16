@@ -12,7 +12,9 @@ export default function Contact() {
                 <p>
                     <b>Let's get in touch!</b>
                 </p>
-                <Button extraPadding>miamantylampi@gmail.com</Button>
+                <Button extraPadding href="mailto: miamantylampi@gmail.com">
+                    miamantylampi@gmail.com
+                </Button>
             </div>
         </div>
     );

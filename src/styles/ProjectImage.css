@@ -1,0 +1,18 @@
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition:
+        transform 0.2s ease-out,
+        filter 0.2s ease-out;
+    background-image: var(--img);
+    background-position: center;
+    background-repeat: no-repeat;
+}
