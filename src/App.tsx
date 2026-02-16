@@ -8,7 +8,7 @@ function App() {
 
     if (path == '/') return <FrontPage />;
 
-    const projectRoute = '/project/';
+    const projectRoute = '/#/project/';
     if (path.startsWith(projectRoute)) {
         const projectId = parseInt(path.slice(projectRoute.length));
         const project = getProject(projectId);
