@@ -1,7 +1,7 @@
 import type { Project } from './project_data';
 import ProjectImage from './ProjectImage';
 import './styles/ProjectCard.css';
-import { useEffect, useRef, type CSSProperties } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface Props {
     project: Project;

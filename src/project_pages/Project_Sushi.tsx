@@ -1,5 +1,3 @@
-import type { CSSProperties } from 'react';
-
 const prefix = '/images/projects/sushi club/';
 
 export default function Project_Bookra() {
