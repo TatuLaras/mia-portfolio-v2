@@ -72,10 +72,22 @@
     grid-column-end: 3;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
+    #about-details .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 920px) {
     #about-details {
-        grid-template-columns: 1fr;
-        grid-row-gap: 1.6em;
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    #about-details h3 {
     }
 
     #about-details h3,

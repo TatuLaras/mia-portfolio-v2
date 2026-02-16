@@ -117,7 +117,9 @@
 @media screen and (max-width: 770px) {
     #project-page-custom-content .grid {
         grid-column-gap: 1em;
-        grid-row-gap: 1em;
+        grid-row-gap: 1.4em;
+
+        grid-template-columns: 1fr 1fr;
     }
 }
 

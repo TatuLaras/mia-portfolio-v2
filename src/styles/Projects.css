@@ -92,3 +92,11 @@
         min-height: 20em;
     }
 }
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 3em;
+
+    font-size: clamp(2rem, 11vw, 3rem);
+    font-weight: 200;
+}
