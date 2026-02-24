@@ -2,6 +2,7 @@ import type { Project } from './project_data';
 import ProjectImage from './ProjectImage';
 import './styles/ProjectCard.css';
 import { useEffect, useRef } from 'react';
+import ProjectLink from './ProjectLink';
 
 interface Props {
     project: Project;
@@ -38,17 +39,18 @@ export default function ProjectCard({ project }: Props) {
     };
 
     return (
-        <a
+        <ProjectLink
             className={`project-card ${project.cardClassName}`}
             ref={ref}
-            draggable={false}
-            href={`/project/${project.id}`}
+            projectId={project.id}
         >
-            <ProjectImage project={project} />
-            <div className="info">
-                <span className="title">{project.title}</span>
-                <span className="category">{project.category}</span>
-            </div>
-        </a>
+            <>
+                <ProjectImage project={project} />
+                <div className="info">
+                    <span className="title">{project.title}</span>
+                    <span className="category">{project.category}</span>
+                </div>
+            </>
+        </ProjectLink>
     );
 }
