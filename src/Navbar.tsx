@@ -53,6 +53,10 @@ export default function Navbar({ onLinkClicked = () => {} }: Props) {
                 <div
                     className={`hamburger-button ${showHamburger ? 'x' : ''}`}
                     onClick={() => setShowHamburger((old) => !old)}
+                    onKeyDown={(e) =>
+                        e.key == 'Enter' && setShowHamburger((old) => !old)
+                    }
+                    tabIndex={0}
                 >
                     <div></div>
                     <div></div>
@@ -60,16 +64,24 @@ export default function Navbar({ onLinkClicked = () => {} }: Props) {
                 </div>
                 <ul className={showHamburger ? 'show' : ''}>
                     <li>
-                        <a href="/#projects">Projects</a>
+                        <a href="/#projects" tabIndex={showHamburger ? 0 : -1}>
+                            Projects
+                        </a>
                     </li>
                     <li>
-                        <a href="/#about">About</a>
+                        <a href="/#about" tabIndex={showHamburger ? 0 : -1}>
+                            About
+                        </a>
                     </li>
                     <li>
-                        <a href="/#resume">Resume</a>
+                        <a href="/#resume" tabIndex={showHamburger ? 0 : -1}>
+                            Resume
+                        </a>
                     </li>
                     <li>
-                        <a href="/#contact">Contact</a>
+                        <a href="/#contact" tabIndex={showHamburger ? 0 : -1}>
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>
