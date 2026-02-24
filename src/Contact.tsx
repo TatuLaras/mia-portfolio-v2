@@ -16,6 +16,9 @@ export default function Contact() {
                     miamantylampi@gmail.com
                 </Button>
             </div>
+            <a href="http://www.laras.cc" className="credit">
+                Website developer
+            </a>
         </div>
     );
 }

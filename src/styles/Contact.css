@@ -1,6 +1,6 @@
 #contact {
     padding-top: 3em;
-    padding-bottom: 8em;
+    padding-bottom: 0.8em;
     background-color: var(--color-blue);
     background: linear-gradient(#0b2f4188, #0b2f41ff 18%);
     position: relative;
@@ -10,6 +10,7 @@
     padding: 0 var(--padding-horizontal);
     max-width: var(--max-width);
     margin: 0 auto;
+    padding-bottom: 8em;
 }
 
 #contact h2 {
@@ -28,4 +29,10 @@
 
 #contact .button {
     margin-top: 8em;
+}
+
+#contact .credit {
+    padding: 0.8em;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
