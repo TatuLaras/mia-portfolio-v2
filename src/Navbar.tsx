@@ -40,7 +40,7 @@ export default function Navbar({ onLinkClicked = () => {} }: Props) {
                     <a href="/#">Mia Mäntylampi</a>
                 </li>
                 <li>
-                    <a href="/#resume">Resume</a>
+                    <a href="/cv.pdf">Resume</a>
                 </li>
                 <li>
                     <a href="/#contact">Contact</a>
@@ -74,7 +74,7 @@ export default function Navbar({ onLinkClicked = () => {} }: Props) {
                         </a>
                     </li>
                     <li>
-                        <a href="/#resume" tabIndex={showHamburger ? 0 : -1}>
+                        <a href="/cv.pdf" tabIndex={showHamburger ? 0 : -1}>
                             Resume
                         </a>
                     </li>

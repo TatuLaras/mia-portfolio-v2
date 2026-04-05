@@ -5,7 +5,7 @@ const prefix = '/images/projects/library management app bookra/';
 export default function Project_Bookra() {
     return (
         <>
-            <div className="split conform">
+            <div className="split tight conform">
                 <div>
                     <h2>About the project</h2>
                     <p>

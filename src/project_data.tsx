@@ -56,7 +56,10 @@ const projects: Project[] = [
         year: '2025',
         client: 'School Project',
         scope: 'Logo Design, Animated Inserts & Graphical Operator',
-        externalLink: { text: 'View Brand Manual', href: '#' },
+        externalLink: {
+            text: 'View Brand Manual',
+            href: '/mikro_gourmet_grafisk_manual.pdf',
+        },
         projectPage: <Project_MikroGourmet />,
     },
     {

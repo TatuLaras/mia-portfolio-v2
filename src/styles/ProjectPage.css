@@ -81,6 +81,14 @@
     flex-wrap: wrap;
 }
 
+#project-page-custom-content .tight h2 {
+    margin-top: 0;
+}
+
+#project-page-custom-content .tight p:last-child {
+    margin-bottom: 0;
+}
+
 #project-page-custom-content .split img {
     width: 100%;
 }
