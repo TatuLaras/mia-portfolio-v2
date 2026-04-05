@@ -26,7 +26,7 @@ export default function AboutDetails() {
                     <h4>Software</h4>
                     <p>
                         Adobe Illustrator, Adobe InDesign, Adobe Photoshop,
-                        Adobe After Effects, Figma, Canva
+                        Adobe After Effects, Figma, Canva, Affinity
                     </p>
                 </div>
             </div>
