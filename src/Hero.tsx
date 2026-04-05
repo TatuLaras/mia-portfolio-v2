@@ -21,11 +21,13 @@ export default function Hero() {
 
     return (
         <header id="hero">
-            <h1>Mia Mäntylampi</h1>
-            <p>
-                I’m a graphic and visual designer who specializes in creating
-                inviting designs with the target audience in mind.
-            </p>
+            <div className="content">
+                <h1>Mia Mäntylampi</h1>
+                <p>
+                    I’m a graphic and visual designer who specializes in
+                    creating inviting designs with the target audience in mind.
+                </p>
+            </div>
             <div className="bg" ref={bgRef} aria-hidden="true"></div>
             <div className="gradient" aria-hidden="true"></div>
         </header>

@@ -1,7 +1,7 @@
 #projects {
     max-width: var(--max-width);
     margin: 0 auto;
-    margin-top: -14em;
+    margin-top: 0em;
     display: grid;
     grid-column-gap: 2em;
     grid-row-gap: 2em;

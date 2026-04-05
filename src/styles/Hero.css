@@ -1,11 +1,18 @@
 #hero {
+    padding: 0 clamp(1em, var(--padding-horizontal), 6em);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     position: relative;
+}
+
+#hero .content {
+    flex: 1;
+    padding-top: 33em;
+    padding-bottom: 41vh;
+    max-width: var(--max-width);
     display: flex;
     flex-direction: column;
-    padding: 0 clamp(1em, 10vw, 6em);
-    padding-top: 30vh;
-    padding-bottom: 40vh;
-    overflow: hidden;
 }
 
 #hero h1 {
@@ -17,7 +24,7 @@
 
 #hero p {
     margin-top: 2em;
-    max-width: 28em;
+    max-width: 30em;
     font-weight: 700;
 }
 

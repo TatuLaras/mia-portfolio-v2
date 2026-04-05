@@ -7,6 +7,8 @@ nav {
     user-select: none;
     text-transform: uppercase;
     z-index: 100;
+    display: flex;
+    justify-content: center;
 }
 
 nav::before {
@@ -27,12 +29,14 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em 4em;
+    padding: 1em calc(var(--padding-horizontal));
     margin-top: 0.4em;
     margin-bottom: 0;
     gap: 3em;
     position: relative;
     font-size: 1.2rem;
+    flex: 1;
+    max-width: var(--max-width);
 }
 
 nav a {
@@ -54,6 +58,7 @@ nav .name {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    flex: 1;
 }
 
 .hamburger-menu .name {

@@ -11,7 +11,7 @@
 
 #about-details h3 {
     text-transform: uppercase;
-    font-size: clamp(1.6rem, 3vw, 3rem);
+    font-size: clamp(1.8rem, 2.5vw, 2.3rem);
     grid-column: 1;
     margin-top: 0;
 }

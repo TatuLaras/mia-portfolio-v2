@@ -37,6 +37,7 @@
 #about h2 {
     font-weight: 100;
     font-size: clamp(2rem, 11vw, 3rem);
+    max-width: 48rem;
     margin-bottom: 0.8em;
     line-height: 130%;
 }
@@ -45,6 +46,7 @@
     line-height: 180%;
     font-weight: 300;
     margin-bottom: 2em;
+    max-width: 50em;
 }
 
 #about span {
